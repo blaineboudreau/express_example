@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-router.use(express.static('./express_example' + '/public'));
+app.use(express.static('./express_example' + '/public'));
 
 // handler for route or "root"
 app.get('/', function(req, res) {
